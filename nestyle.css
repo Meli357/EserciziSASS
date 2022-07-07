@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.exercise {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 5fr;
+  grid-template-rows: 0.5fr 1fr;
+  justify-items: center;
+  border: 1px solid red;
+  padding: 0.75rem;
+}
+.exercise .exercise-title {
+  color: green;
+  text-decoration: underline blue;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr;
+  grid-template-rows: 1.25fr;
+  column-gap: 1rem;
+  text-align: center;
+  border: 1px solid green;
+}
+section .first {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-right: 2px solid green;
+  color: blue;
+}
+section .second {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-right: 2px solid green;
+  color: red;
+}
+section .third {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  border-right: 2px solid green;
+  color: blue;
+}
+section .fourth {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  color: red;
+}
+
+/*# sourceMappingURL=nestyle.css.map */
