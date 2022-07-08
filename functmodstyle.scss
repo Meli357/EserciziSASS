@@ -1,0 +1,76 @@
+@use 'base' ;
+
+@mixin article-card($color:blue) {
+    color:$color;
+    border:rem(1px) solid base.$color-tertiary;
+    font-size:1rem;
+}
+
+@mixin article-footer($color:green){
+    color:$color;
+    border: rem(1px) solid base.$color-secondary;
+    font-size:rem(24px);
+}
+
+@function rem($val1){
+    @return calc($val1 / 16px) + rem ;
+}
+
+.exercise{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.75fr;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid base.$color-primary;
+    padding: 0.75rem;
+    row-gap: 0.75rem;
+
+    .exercise-title{
+        color:base.$color-tertiary;
+        text-decoration: underline base.$color-secondary;
+    }
+        
+}
+
+.first-cont{
+    display:grid;
+    grid-template-columns: 0.40fr 0.40fr 0.40fr 0.40fr;
+    grid-template-rows: 1.25fr;
+    width:100%;
+    text-align:center;
+
+    .first{ 
+        grid-column: 1/2;
+        grid-row: 1/2;
+        @include article-card($color:blue);
+    }
+    
+    .second{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        @include article-card($color:red);
+    }
+    
+    .third{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        @include article-card($color:blue);
+    }
+    
+    .fourth{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        @include article-card($color:red);
+    }
+
+}
+
+.second-cont{
+    width:100%;
+    text-align: center;
+
+    .fifth{
+        @include article-footer($color:green);
+    }
+}
