@@ -1,0 +1,68 @@
+div h2, div .exercise-title {
+  color: green;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid red;
+  padding: 0.75rem;
+  row-gap: 0.75rem;
+}
+div .exercise-title {
+  text-decoration: underline blue;
+}
+div h2 {
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.first-cont {
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr;
+  grid-template-rows: 1.25fr;
+  width: 100%;
+  text-align: center;
+}
+.first-cont .first {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.first-cont .second {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.first-cont .third {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.first-cont .fourth {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+
+.second-cont {
+  width: 100%;
+  text-align: center;
+}
+.second-cont .fifth {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=selectorstyle.css.map */
