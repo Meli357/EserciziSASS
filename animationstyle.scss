@@ -1,10 +1,23 @@
-@mixin bounce(
-  $duration:null,
-  $start:null,  
-  $distance:null){
-
+@mixin bounce{
+    $duration:null;
+    $start:null;
+    $distance:null;
   }
 
-div{
-    @include bounce(1s, 0 ,40)
-}
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+     40% {transform: translateY(-60px);}
+     60% {transform: translateY(-30px);}
+     80% {transform: translateY(-15px);}
+    } 
+
+.bounce { 
+     animation-duration: 1s;
+     animation-name: bounce;
+     width:50px;
+     height:50px;
+     margin-top: 20px;
+     background-color: aqua; 
+     @include bounce()
+    }
+
