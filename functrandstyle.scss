@@ -1,0 +1,32 @@
+@function random-hex(){
+    $rgb: '';
+    $i: 6;
+    @while $i > 0 {
+      $hex-unit: random();
+      $letters: A, B, C, D, E, F;
+      @if $hex-unit > 9 { 
+        $hex-unit: nth($letters, ($hex-unit - 9));
+      };
+      $rgb: str-insert($rgb, ("" + $hex-unit), 0);
+    }
+    @return unquote("#"+"{$rgb}");
+  }
+
+body{
+    height:100vh;
+    display:flex;
+}
+
+.columns{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}    
+
+.col{
+    height: 100%;
+    width:8%;
+    background-color:aqua;
+}
+

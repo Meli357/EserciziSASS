@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.columns {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  height: 100%;
+  width: 8%;
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=functradstyle.css.map */
