@@ -1,0 +1,40 @@
+@mixin bounce{
+    $duration:null;
+    $start:null;
+    $distance:null;
+  }
+
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+     40% {transform: translateY(-60px);}
+     60% {transform: translateY(-30px);}
+     80% {transform: translateY(-15px);}
+    } 
+
+@mixin random-hex(){
+    background: rgb(random(255), random(255), random(255));
+    }
+
+body{
+    height:100vh;
+    width: 100vw;
+}
+
+.bg-random{
+          @include random-hex();
+    }
+
+
+.bounce{ 
+     @extend .bg-random;
+     animation-duration: 1s;
+     animation-name: bounce;
+     width:75px;
+     height:75px;
+     border-radius:50px;
+     position:absolute;
+     top: 50%;
+     left: 50%;
+     margin: 0 auto; 
+     @include bounce();
+    }
