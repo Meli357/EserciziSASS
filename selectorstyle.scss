@@ -28,13 +28,13 @@ div{
     border: 1px solid base.$color-primary;
     padding: 0.75rem;
     row-gap: 0.75rem;
-
-    .exercise-title{
+    
+    & .exercise-title{
         @extend %text;
         text-decoration: underline base.$color-secondary;
     }
 
-    h2{
+    & h2{
         @extend %text;
         border: 1px solid base.$color-primary;
         padding: 1rem;
@@ -49,25 +49,25 @@ div{
     width:100%;
     text-align:center;
 
-    .first{ 
+    & .first{ 
         grid-column: 1/2;
         grid-row: 1/2;
         @include article-card($color:blue);
     }
     
-    .second{
+    & .second{
         grid-column: 2/3;
         grid-row: 1/2;
         @include article-card($color:red);
     }
     
-    .third{
+    & .third{
         grid-column: 3/4;
         grid-row: 1/2;
         @include article-card($color:blue);
     }
     
-    .fourth{
+    & .fourth{
         grid-column: 4/5;
         grid-row: 1/2;
         @include article-card($color:red);
@@ -79,7 +79,7 @@ div{
     width:100%;
     text-align: center;
 
-    .fifth{
+    & .fifth{
         @include article-footer($color:green);
     }
 }
