@@ -1,0 +1,50 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+}
+
+.col {
+  height: 200px;
+  width: 100px;
+  margin: 2px;
+}
+.col:nth-child(0) {
+  background: rgb(24, 64, 138);
+}
+.col:nth-child(1) {
+  background: rgb(38, 5, 102);
+}
+.col:nth-child(2) {
+  background: rgb(198, 112, 125);
+}
+.col:nth-child(3) {
+  background: rgb(114, 158, 79);
+}
+.col:nth-child(4) {
+  background: rgb(96, 147, 79);
+}
+.col:nth-child(5) {
+  background: rgb(76, 1, 48);
+}
+.col:nth-child(6) {
+  background: rgb(121, 227, 75);
+}
+.col:nth-child(7) {
+  background: rgb(212, 109, 137);
+}
+.col:nth-child(8) {
+  background: rgb(91, 127, 74);
+}
+.col:nth-child(9) {
+  background: rgb(136, 104, 153);
+}
+.col:nth-child(10) {
+  background: rgb(3, 84, 34);
+}
+.col:nth-child(11) {
+  background: rgb(117, 195, 110);
+}
+
+/*# sourceMappingURL=functrandstyle.css.map */

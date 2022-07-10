@@ -1,32 +1,22 @@
-@function random-hex(){
-    $rgb: '';
-    $i: 6;
-    @while $i > 0 {
-      $hex-unit: random();
-      $letters: A, B, C, D, E, F;
-      @if $hex-unit > 9 { 
-        $hex-unit: nth($letters, ($hex-unit - 9));
-      };
-      $rgb: str-insert($rgb, ("" + $hex-unit), 0);
-    }
-    @return unquote("#"+"{$rgb}");
-  }
 
-body{
-    height:100vh;
-    display:flex;
+@mixin random-hex(){
+  background: rgb(random(255), random(255), random(255));
 }
 
 .columns{
-    height:100%;
-    width:100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
 }    
 
 .col{
-    height: 100%;
-    width:8%;
-    background-color:aqua;
-}
+    height: 200px;
+    width:100px;
+    margin:2px;
+    $num-colors:12;
 
+    @for $i from 0 to $num-colors {
+      &:nth-child(#{$i}) {
+        @include random-hex();
+  }}}
