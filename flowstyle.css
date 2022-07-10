@@ -1,3 +1,139 @@
+.exercise h2, .exercise .exercise-title {
+  color: green;
+}
 
+.exercise {
+  display: grid;
+  grid-template-columns: 5fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid red;
+  padding: 0.75rem;
+  row-gap: 0.75rem;
+}
+.exercise .exercise-title {
+  text-decoration: underline blue;
+}
+.exercise h2 {
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.first-cont {
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr;
+  grid-template-rows: 1.25fr;
+  width: 100%;
+  text-align: center;
+}
+.first-cont .first {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.first-cont .second {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.first-cont .third {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.first-cont .fourth {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+
+.mid-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mid-content :nth-child(1) {
+  background-color: #f2f2f2;
+}
+.mid-content :nth-child(2) {
+  background-color: #e6e6e6;
+}
+.mid-content :nth-child(3) {
+  background-color: #d9d9d9;
+}
+.mid-content :nth-child(4) {
+  background-color: #cccccc;
+}
+.mid-content :nth-child(5) {
+  background-color: #bfbfbf;
+}
+.mid-content :nth-child(6) {
+  background-color: #b3b3b3;
+}
+.mid-content :nth-child(7) {
+  background-color: #a6a6a6;
+}
+.mid-content :nth-child(8) {
+  background-color: #999999;
+}
+.mid-content :nth-child(9) {
+  background-color: #8c8c8c;
+}
+.mid-content :nth-child(11) {
+  background-color: #8c8c8c;
+}
+.mid-content :nth-child(12) {
+  background-color: #999999;
+}
+.mid-content :nth-child(13) {
+  background-color: #a6a6a6;
+}
+.mid-content :nth-child(14) {
+  background-color: #b3b3b3;
+}
+.mid-content :nth-child(15) {
+  background-color: #bfbfbf;
+}
+.mid-content :nth-child(16) {
+  background-color: #cccccc;
+}
+.mid-content :nth-child(17) {
+  background-color: #d9d9d9;
+}
+.mid-content :nth-child(18) {
+  background-color: #e6e6e6;
+}
+.mid-content :nth-child(19) {
+  background-color: #f2f2f2;
+}
+
+.fs-1rem,
+.fs-2rem,
+.fs-3rem {
+  border: 1px solid red;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+.second-cont {
+  width: 100%;
+  text-align: center;
+}
+.second-cont .fifth {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1.5rem;
+}
 
 /*# sourceMappingURL=flowstyle.css.map */
