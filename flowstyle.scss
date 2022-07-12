@@ -21,9 +21,16 @@
 }
 
 $base-color: rgb(255, 255, 255);
-
-
 $base-color1: black;
+
+$sizes: 1rem, 2rem, 3rem;
+
+@each $size in $sizes {
+  .fs-#{$size} {
+    font-size: $size;
+  }
+}
+
 
 .exercise{
     display:grid;
@@ -88,18 +95,23 @@ $base-color1: black;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @for $i from 1 through 9 {
-        & :nth-child(#{$i}) {
-          background-color: darken($base-color, $i * 5%);
-        }
-      }
 
-    @for $i from 11 through 19 {
-        & :nth-child(#{$i}) {
-          background-color: lighten($base-color1, $i * 5%);
-        }
-      }
-}
+    @for $var from 1 to 20{
+        & :nth-child(#{$var}) {
+            background-color: darken($base-color,  $var * 5%);
+            color: lighten($base-color1, $var * 5%)
+        }    
+
+        @if $var == 10 {
+            &  :nth-child(10){
+                background-color: base.$color-secondary;
+                color: base.$color-primary;
+            }
+    }
+}}
+
+
+
 
 .fs-1rem, 
 .fs-2rem, 
