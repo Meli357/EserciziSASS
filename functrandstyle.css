@@ -1,50 +1,65 @@
+html, body {
+  height: 100vh;
+}
+
 .columns {
   display: flex;
-  flex-wrap: wrap;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
 
 .col {
-  height: 200px;
+  height: 300px;
   width: 100px;
   margin: 2px;
 }
-.col:nth-child(0) {
-  background: rgb(24, 64, 138);
+
+div:nth-child(1) {
+  background: #A5B579;
 }
-.col:nth-child(1) {
-  background: rgb(38, 5, 102);
+
+div:nth-child(2) {
+  background: #C08C18;
 }
-.col:nth-child(2) {
-  background: rgb(198, 112, 125);
+
+div:nth-child(3) {
+  background: #56DF48;
 }
-.col:nth-child(3) {
-  background: rgb(114, 158, 79);
+
+div:nth-child(4) {
+  background: #B7469C;
 }
-.col:nth-child(4) {
-  background: rgb(96, 147, 79);
+
+div:nth-child(5) {
+  background: #7FCE5F;
 }
-.col:nth-child(5) {
-  background: rgb(76, 1, 48);
+
+div:nth-child(6) {
+  background: #63F0E2;
 }
-.col:nth-child(6) {
-  background: rgb(121, 227, 75);
+
+div:nth-child(7) {
+  background: #6159FB;
 }
-.col:nth-child(7) {
-  background: rgb(212, 109, 137);
+
+div:nth-child(8) {
+  background: #898944;
 }
-.col:nth-child(8) {
-  background: rgb(91, 127, 74);
+
+div:nth-child(9) {
+  background: #9E71EE;
 }
-.col:nth-child(9) {
-  background: rgb(136, 104, 153);
+
+div:nth-child(10) {
+  background: #80D534;
 }
-.col:nth-child(10) {
-  background: rgb(3, 84, 34);
+
+div:nth-child(11) {
+  background: #226A26;
 }
-.col:nth-child(11) {
-  background: rgb(117, 195, 110);
+
+div:nth-child(12) {
+  background: #76F4B6;
 }
 
 /*# sourceMappingURL=functrandstyle.css.map */
